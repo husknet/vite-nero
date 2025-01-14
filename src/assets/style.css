@@ -1,0 +1,92 @@
+/* General Page Styling */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #001f3f; /* Dark Blue Background */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Loading Container Styling */
+body::before {
+  content: "Checking file, please wait...";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-size: 1.5rem;
+  text-align: center;
+  z-index: 10;
+}
+
+/* PDF Logo Styling */
+body::after {
+  content: "";
+  display: block;
+  background-image: url('/pdf-logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+}
+
+/* Spinner Animation */
+.spinner {
+  width: 60px;
+  height: 60px;
+  border: 6px solid #e0e0e0;
+  border-top-color: #e44d26;
+  border-radius: 50%;
+  animation: spin 1s infinite linear;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Blocked Access Page Styling */
+body.blocked::before {
+  content: "Access Denied\A Your access has been blocked due to security policies.";
+  white-space: pre-line;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ff4d4d;
+  font-size: 2rem;
+  text-align: center;
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+body.blocked {
+  background-color: #1a1a1a;
+}
+
+/* Remove spinner for blocked users */
+body.blocked .spinner {
+  display: none;
+}
